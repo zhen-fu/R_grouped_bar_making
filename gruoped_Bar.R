@@ -1,9 +1,10 @@
 ### This is the most simple code to plot a grouped bar plots
+library(plyr)
+library(ggplot2)
 list.files()
 df <- read.csv("farm_sp_richness_example.txt", header = T, sep = "\t")
 head(df)
-library(plyr)
-library(ggplot2)
+
 split_df <-ddply(df, c("Farm_management", "Geographic_location"), 
                  summarise, N=length(species_richness), mean=mean(species_richness), 
                  sd=sd(species_richness),
