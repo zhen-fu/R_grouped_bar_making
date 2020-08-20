@@ -1,3 +1,4 @@
+### sample files that can be used for R plotting
 sample	Farm_management	Geographic_location	species_richness
 1	Organic	Oregon	4.89
 2	Organic	Oregon	5.63
