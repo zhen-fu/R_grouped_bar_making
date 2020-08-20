@@ -1,3 +1,4 @@
+### This is the most simple code to plot a grouped bar plots
 list.files()
 df <- read.csv("farm_sp_richness_example.txt", header = T, sep = "\t")
 head(df)
